@@ -1,0 +1,17 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Lab7;
+
+/**
+ *
+ * @author chanakarnkingkaew
+ */
+public class TestShape {
+
+    public static void main(String[] args) {
+        Shape s1 = new Circle(5.5, "RED", false);  // Upcast Circle to Shape
+        System.out.println(s1);  // A Circle with radius = 5.5, which is a subclass of A Shape with color of RED and not filled
+    }
+}
