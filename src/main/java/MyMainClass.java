@@ -9,6 +9,7 @@ class Animal {
 
 class Pig extends Animal {
 
+    @Override
     public void animalSound() {
         System.out.println("The pig says: wee wee");
     }
@@ -17,19 +18,18 @@ class Pig extends Animal {
 
 class Dog extends Animal {
 
+    @Override
     public void animalSound() {
         System.out.println("The dog says: bow wow");
-
     }
 }
 
 public class MyMainClass {
 
     public static void main(String[] args) {
-        Animal myAnimal = new Animal();
-
-        Animal myPig = new Pig();
-        Animal myDog = new Dog();
+        Animal myAnimal = new Animal(); // Ref Type = Animal Obj Type = Animal 
+        Animal myPig = new Pig(); // Ref Type = Animal Obj Type = Pig
+        Animal myDog = new Dog(); // Ref Type = Animal Obj Type = Dog
         myAnimal.animalSound();
         myPig.animalSound();
         myDog.animalSound();
