@@ -30,8 +30,14 @@ public class MyMainClass {
         Animal myAnimal = new Animal(); // Ref Type = Animal Obj Type = Animal 
         Animal myPig = new Pig(); // Ref Type = Animal Obj Type = Pig
         Animal myDog = new Dog(); // Ref Type = Animal Obj Type = Dog
-        myAnimal.animalSound();
+        
+        // Dynamic Binding - Late Binding - Dynamic Polymorphism - Runtime Polymorphism
+        myAnimal.animalSound(); 
         myPig.animalSound();
         myDog.animalSound();
+        
+        
+        Dog dog = new Dog();
+        dog.animalSound();
     }
 }
